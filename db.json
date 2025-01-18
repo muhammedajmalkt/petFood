@@ -1,0 +1,572 @@
+{
+  "users": [
+    {
+      "id": "9090",
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "admin123"
+    },
+    {
+      "id": "2c22",
+      "name": "ajmal",
+      "email": "ajmal@gmail.com",
+      "password": "opopop",
+      "cpassword": "opopop",
+      "cart": [
+        {
+          "id": "2c4f",
+          "image": "https://www.petsy.online/cdn/shop/files/Fit32-9.png?v=1717584696&width=1200",
+          "name": "Royal Canin Fit Adult Dry Cat Food",
+          "category": "cat",
+          "weight": "4kg",
+          "price": "3999",
+          "quantity": 1
+        },
+        {
+          "id": "f4ed",
+          "image": "https://www.petsy.online/cdn/shop/files/PedigreeAdultDryDogFood-MeatandRice_823x823.jpg?v=1710500418",
+          "name": "Pedigree Adult Dry Dog Food - Meat and Rice",
+          "category": "dog",
+          "weight": "1kg",
+          "price": "249",
+          "quantity": 2
+        },
+        {
+          "id": "c6ee",
+          "image": "https://www.petsy.online/cdn/shop/products/1_6a110ae8-caf5-426c-87e9-42dcc67a2625.png?v=1585898150&width=832",
+          "name": "Himalaya Healthy Pet Food - Puppy - Chicken & Rice",
+          "category": "dog",
+          "weight": "3kg",
+          "price": "849",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "db16",
+      "name": "nazi",
+      "email": "picdesc9745@gmail.com",
+      "password": ",.,.,.",
+      "cpassword": ",.,.,.",
+      "cart": [
+        {
+          "id": "e42d",
+          "image": "https://www.petsy.online/cdn/shop/files/1_17_59313985-7762-4718-b4bb-089b5f41ef54.jpg?v=1707812325&width=832",
+          "name": "Pedigree PRO Dry Dog Food - Adult Small Breed Dogs (9+ Months)",
+          "category": "dog",
+          "weight": "1.2kg",
+          "price": "499",
+          "quantity": 1
+        },
+        {
+          "id": "a724",
+          "image": "https://www.petsy.online/cdn/shop/files/1_12.jpg?v=1707806109&width=832",
+          "name": "Pedigree Complete & Balanced Food for Puppy & Adult Dogs, 100% Vegetarian",
+          "category": "dog",
+          "weight": "1kg",
+          "price": "399",
+          "quantity": 2
+        },
+        {
+          "id": "f4ed",
+          "image": "https://www.petsy.online/cdn/shop/files/PedigreeAdultDryDogFood-MeatandRice_823x823.jpg?v=1710500418",
+          "name": "Pedigree Adult Dry Dog Food - Meat and Rice",
+          "category": "dog",
+          "weight": "1kg",
+          "price": "249",
+          "quantity": 2
+        },
+        {
+          "id": "a6a6",
+          "image": "https://www.petsy.online/cdn/shop/products/1_95c56d15-55ce-4e8c-99a3-bee0d5e8db87.png?v=1677396668&width=832",
+          "name": "Whiskas Dry Cat Food for Adult Cats (1+ Years), Ocean Fish Flavour",
+          "category": "cat",
+          "weight": "1kg",
+          "price": "599",
+          "quantity": 1
+        },
+        {
+          "id": "53cf",
+          "image": "https://www.petsy.online/cdn/shop/files/PersianAdult-10.png?v=1717584822&width=1200",
+          "name": "Royal Canin Persian Adult Breed Dry Cat Food",
+          "category": "cat",
+          "weight": "400g",
+          "price": "599",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "8c2a",
+      "name": "fariz",
+      "email": "faris@gmail.com",
+      "password": "klklkl",
+      "cpassword": "klklkl",
+      "cart": [
+        {
+          "id": "f4ed",
+          "image": "https://www.petsy.online/cdn/shop/files/PedigreeAdultDryDogFood-MeatandRice_823x823.jpg?v=1710500418",
+          "name": "Pedigree Adult Dry Dog Food - Meat and Rice",
+          "category": "dog",
+          "weight": "1kg",
+          "price": "249",
+          "quantity": 2
+        },
+        {
+          "id": "e42d",
+          "image": "https://www.petsy.online/cdn/shop/files/1_17_59313985-7762-4718-b4bb-089b5f41ef54.jpg?v=1707812325&width=832",
+          "name": "Pedigree PRO Dry Dog Food - Adult Small Breed Dogs (9+ Months)",
+          "category": "dog",
+          "weight": "1.2kg",
+          "price": "499",
+          "quantity": 1
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "a6a6",
+      "image": "https://www.petsy.online/cdn/shop/products/1_95c56d15-55ce-4e8c-99a3-bee0d5e8db87.png?v=1677396668&width=832",
+      "name": "Whiskas Dry Cat Food for Adult Cats (1+ Years), Ocean Fish Flavour",
+      "category": "cat",
+      "weight": "1kg",
+      "price": "599"
+    },
+    {
+      "id": "f4ed",
+      "image": "https://www.petsy.online/cdn/shop/files/PedigreeAdultDryDogFood-MeatandRice_823x823.jpg?v=1710500418",
+      "name": "Pedigree Adult Dry Dog Food - Meat and Rice",
+      "category": "dog",
+      "weight": "1kg",
+      "price": "249"
+    },
+    {
+      "id": "e42d",
+      "image": "https://www.petsy.online/cdn/shop/files/1_17_59313985-7762-4718-b4bb-089b5f41ef54.jpg?v=1707812325&width=832",
+      "name": "Pedigree PRO Dry Dog Food - Adult Small Breed Dogs (9+ Months)",
+      "category": "dog",
+      "weight": "1.2kg",
+      "price": "499"
+    },
+    {
+      "id": "a724",
+      "image": "https://www.petsy.online/cdn/shop/files/1_12.jpg?v=1707806109&width=832",
+      "name": "Pedigree Complete & Balanced Food for Puppy & Adult Dogs, 100% Vegetarian",
+      "category": "dog",
+      "weight": "1kg",
+      "price": "399"
+    },
+    {
+      "id": "5441",
+      "image": "https://www.petsy.online/cdn/shop/products/2_9987536c-c64e-4b86-973c-1556c941d388.png?v=1717585053&width=832",
+      "name": "Royal Canin Mini Adult Dry Dog Food",
+      "category": "dog",
+      "weight": "700g",
+      "price": "899"
+    },
+    {
+      "id": "c6ee",
+      "image": "https://www.petsy.online/cdn/shop/products/1_6a110ae8-caf5-426c-87e9-42dcc67a2625.png?v=1585898150&width=832",
+      "name": "Himalaya Healthy Pet Food - Puppy - Chicken & Rice",
+      "category": "dog",
+      "weight": "3kg",
+      "price": "849"
+    },
+    {
+      "id": "d1d6",
+      "image": "https://www.petsy.online/cdn/shop/products/shebameltymaguroselection48g.jpg?v=1607319046&width=832",
+      "name": "Sheba Melty Cat Treat - Maguro Tuna & Seafood",
+      "category": "cat",
+      "weight": "50g",
+      "price": "199"
+    },
+    {
+      "id": "23aa",
+      "name": "Pedigree Meat Jerky Adult Dog Treat , Roasted Lamb",
+      "image": "https://www.petsy.online/cdn/shop/products/Untitleddesign_3.png?v=1588945221&width=832",
+      "weight": "80g",
+      "category": "dog",
+      "price": "155"
+    },
+    {
+      "id": "075f",
+      "name": "Chip Chops Dog Treats - Chicken Tenders",
+      "image": "https://www.petsy.online/cdn/shop/products/1_75d0bc4c-1e8b-4560-8bff-ee4519438816.jpg?v=1686909103&width=832",
+      "weight": "70g",
+      "category": "dog",
+      "price": "199"
+    },
+    {
+      "id": "47e8",
+      "name": "Temptations Cat Treats - Tempting Tuna Flavor",
+      "image": "https://www.petsy.online/cdn/shop/products/5_327250d7-2cd0-43c3-82e2-712ecd962379.png?v=1607160517&width=832",
+      "weight": "85g",
+      "category": "cat",
+      "price": "189"
+    },
+    {
+      "id": "73db",
+      "name": "Rena Kitty Licks Cat Treats - Tuna (15g x 4 tubes)",
+      "image": "https://www.petsy.online/cdn/shop/products/27_6ab86130-9b47-409b-a4a4-1f99ff47a7f5.jpg?v=1655371358&width=352",
+      "weight": "15g",
+      "category": "cat",
+      "price": "149"
+    },
+    {
+      "id": "9b58",
+      "name": "Waggy Zone Vegan Doggy Ice Cream Insta Mix - Mango Magnifera ",
+      "image": "https://www.petsy.online/cdn/shop/products/waggyzone_mangomanifera_apluscopy.jpg?v=1630752467&width=832",
+      "weight": "40g",
+      "category": "dog",
+      "price": "99"
+    },
+    {
+      "id": "e7bd",
+      "name": "Dogsee Crunch Dog Treats - Banana (Vegetarian, Vegan & Gluten-free",
+      "image": "https://www.petsy.online/cdn/shop/products/4_d37b73ca-feee-475f-844b-ee4b5908d2f1.png?v=1686936658&width=832",
+      "weight": "50g",
+      "category": "dog",
+      "price": "249"
+    },
+    {
+      "id": "0809",
+      "name": "First Bark Dog Treats - Fruity Blast - Blueberry Zing (225g)",
+      "image": "https://www.petsy.online/cdn/shop/products/8_dd73890f-4508-420d-bea3-d51c825a9520.jpg?v=1646049641&width=352",
+      "weight": "225g",
+      "category": "dog",
+      "price": "349"
+    },
+    {
+      "id": "a704",
+      "name": "Sheba Wet Cat Food - Tuna Filets in Jelly Can ",
+      "image": "https://www.petsy.online/cdn/shop/products/ShebaWetCatFood_TunaFiletsinJellyCan_Packof12.jpg?v=1670917273&width=352",
+      "weight": "185g",
+      "category": "cat",
+      "price": "1299"
+    },
+    {
+      "id": "fab0",
+      "name": "Me-O Delite Wet Cat Food - Tuna with Crab Sticks in Jelly",
+      "image": "https://www.petsy.online/cdn/shop/products/7_259ecfdc-a54f-4fe2-b2f0-bcd725157f0f.jpg?v=1650281278&width=352",
+      "weight": "70g",
+      "category": "cat",
+      "price": "799"
+    },
+    {
+      "id": "e60f",
+      "name": "Bellotta Premium Wet Cat Food - Tuna with Chicken in 3 Layers (185g Tin)",
+      "image": "https://www.petsy.online/cdn/shop/products/8_94fea84e-0cb6-44d9-9372-ef928285c29b.jpg?v=1650036273&width=352",
+      "weight": "185g",
+      "category": "cat",
+      "price": "99"
+    },
+    {
+      "id": "2a99",
+      "name": "Royal Canin Hair & Skin Care Adult Dry Cat Food",
+      "image": "https://www.petsy.online/cdn/shop/products/7_6bcd7945-ca69-4be5-97f7-792acea18c7d.png?v=1717584860&width=832",
+      "weight": "400g",
+      "category": "cat",
+      "price": "479"
+    },
+    {
+      "id": "cb17",
+      "name": "Farmina Dry Food - N&D Prime Cat Chicken & Pomegranate Kitten",
+      "image": "https://www.petsy.online/cdn/shop/products/95_87880a49-4a5e-4c46-932e-8178cd383a9b.jpg?v=1650998433&width=352",
+      "weight": "300g",
+      "category": "cat",
+      "price": "899"
+    },
+    {
+      "id": "9749",
+      "name": "Royal Canin Maxi Puppy Dry Dog Food",
+      "image": "https://www.petsy.online/cdn/shop/products/2_5c32e80e-d7cc-4a7d-af4f-e89a4c977920.png?v=1717584910&width=832",
+      "weight": "1kg",
+      "category": "dog",
+      "price": "999"
+    },
+    {
+      "id": "cb73",
+      "name": "Royal Canin Mini Puppy Dry Dog Food",
+      "image": "https://www.petsy.online/cdn/shop/products/2_e17adbe2-3e2e-498b-b178-6b45256cd078.png?v=1717585062&width=832",
+      "weight": "800g",
+      "category": "dog",
+      "price": "899"
+    },
+    {
+      "id": "706d",
+      "name": "Royal Canin Hair & Skin Care Adult Dry Cat Food",
+      "image": "https://www.petsy.online/cdn/shop/products/7_6bcd7945-ca69-4be5-97f7-792acea18c7d.png?v=1717584860&width=832",
+      "weight": "400g",
+      "category": "cat",
+      "price": "499"
+    },
+    {
+      "id": "a7f3",
+      "name": "Royal Canin Hairball Care Adult Dry Cat Food",
+      "image": "https://www.petsy.online/cdn/shop/products/1_6a30af60-4935-414d-a92a-4f73ac3f7cb1.png?v=1717585044&width=832",
+      "weight": "400g",
+      "category": "cat",
+      "price": "489"
+    },
+    {
+      "id": "65dd",
+      "name": "Dogaholic Dog Treats - Milky Chew Stick Style",
+      "image": "https://www.petsy.online/cdn/shop/products/1.2_885b11db-31c1-46b8-b9b1-f8d4f51312cc.jpg?v=1686913221&width=832",
+      "weight": "50g",
+      "category": "dog",
+      "price": "349"
+    },
+    {
+      "id": "0a2c",
+      "name": "Dogaholic Dog Treats - Milky Chew Cheese & Chicken Bone Style",
+      "image": "https://www.petsy.online/cdn/shop/products/1.2_3441f418-20ef-4ae4-84f3-0f71342a9e25.jpg?v=1686927096&width=832",
+      "weight": "50g",
+      "category": "dog",
+      "price": "339"
+    },
+    {
+      "id": "b5ce",
+      "name": "Drools Cat Treats - Real Chicken Biscuits",
+      "image": "https://www.petsy.online/cdn/shop/products/71YmWZBVJlL._SL1500.jpg?v=1656679247&width=352",
+      "weight": "40",
+      "category": "cat",
+      "price": "249g"
+    },
+    {
+      "id": "b242",
+      "image": "https://www.petsy.online/cdn/shop/products/Untitleddesign-2020-04-04T140335.456.png?v=1585989228&width=832",
+      "name": "Sheba Melty Cat Treat - Maguro Tuna & Seafood",
+      "category": "cat",
+      "weight": "2kg",
+      "price": "1999"
+    }
+  ],
+  "order": [
+    {
+      "id": "e986",
+      "username": "nazi",
+      "userid": "db16",
+      "items": [
+        {
+          "id": "e42d",
+          "image": "https://www.petsy.online/cdn/shop/files/1_17_59313985-7762-4718-b4bb-089b5f41ef54.jpg?v=1707812325&width=832",
+          "name": "Pedigree PRO Dry Dog Food - Adult Small Breed Dogs (9+ Months)",
+          "category": "dog",
+          "weight": "1.2kg",
+          "price": "499",
+          "quantity": 1
+        },
+        {
+          "id": "a724",
+          "image": "https://www.petsy.online/cdn/shop/files/1_12.jpg?v=1707806109&width=832",
+          "name": "Pedigree Complete & Balanced Food for Puppy & Adult Dogs, 100% Vegetarian",
+          "category": "dog",
+          "weight": "1kg",
+          "price": "399",
+          "quantity": 2
+        },
+        {
+          "id": "f4ed",
+          "image": "https://www.petsy.online/cdn/shop/files/PedigreeAdultDryDogFood-MeatandRice_823x823.jpg?v=1710500418",
+          "name": "Pedigree Adult Dry Dog Food - Meat and Rice",
+          "category": "dog",
+          "weight": "1kg",
+          "price": "249",
+          "quantity": 2
+        },
+        {
+          "id": "a6a6",
+          "image": "https://www.petsy.online/cdn/shop/products/1_95c56d15-55ce-4e8c-99a3-bee0d5e8db87.png?v=1677396668&width=832",
+          "name": "Whiskas Dry Cat Food for Adult Cats (1+ Years), Ocean Fish Flavour",
+          "category": "cat",
+          "weight": "1kg",
+          "price": "599",
+          "quantity": 1
+        },
+        {
+          "id": "53cf",
+          "image": "https://www.petsy.online/cdn/shop/files/PersianAdult-10.png?v=1717584822&width=1200",
+          "name": "Royal Canin Persian Adult Breed Dry Cat Food",
+          "category": "cat",
+          "weight": "400g",
+          "price": "599",
+          "quantity": 1
+        }
+      ],
+      "date": "2024-11-04T06:37:18.235Z",
+      "totalamount": 2993
+    },
+    {
+      "id": "9e76",
+      "username": "fariz",
+      "userid": "8c2a",
+      "items": [
+        {
+          "id": "53cf",
+          "image": "https://www.petsy.online/cdn/shop/files/PersianAdult-10.png?v=1717584822&width=1200",
+          "name": "Royal Canin Persian Adult Breed Dry Cat Food",
+          "category": "cat",
+          "weight": "800g",
+          "price": "599",
+          "quantity": 2
+        },
+        {
+          "id": "cd57",
+          "image": "https://www.petsy.online/cdn/shop/products/1_95c56d15-55ce-4e8c-99a3-bee0d5e8db87.png?v=1677396668&width=832",
+          "name": "Whiskas Dry Cat Food for Adult Cats, Ocean Fish Flavour",
+          "category": "cat",
+          "weight": "480g",
+          "price": "399",
+          "quantity": 1
+        }
+      ],
+      "date": "2024-11-04T16:37:17.143Z",
+      "totalamount": 1597
+    },
+    {
+      "id": "c777",
+      "username": "fariz",
+      "userid": "8c2a",
+      "items": [
+        {
+          "id": "f4ed",
+          "image": "https://www.petsy.online/cdn/shop/files/PedigreeAdultDryDogFood-MeatandRice_823x823.jpg?v=1710500418",
+          "name": "Pedigree Adult Dry Dog Food - Meat and Rice",
+          "category": "dog",
+          "weight": "1kg",
+          "price": "249",
+          "quantity": 15
+        }
+      ],
+      "date": "2024-11-08T09:07:46.042Z",
+      "totalamount": 3735
+    },
+    {
+      "id": "737c",
+      "username": "fariz",
+      "userid": "8c2a",
+      "items": [
+        {
+          "id": "f4ed",
+          "image": "https://www.petsy.online/cdn/shop/files/PedigreeAdultDryDogFood-MeatandRice_823x823.jpg?v=1710500418",
+          "name": "Pedigree Adult Dry Dog Food - Meat and Rice",
+          "category": "dog",
+          "weight": "1kg",
+          "price": "249",
+          "quantity": 15
+        }
+      ],
+      "date": "2024-11-08T09:07:58.425Z",
+      "totalamount": 3735
+    },
+    {
+      "id": "dd4f",
+      "username": "fariz",
+      "userid": "8c2a",
+      "items": [
+        {
+          "id": "f4ed",
+          "image": "https://www.petsy.online/cdn/shop/files/PedigreeAdultDryDogFood-MeatandRice_823x823.jpg?v=1710500418",
+          "name": "Pedigree Adult Dry Dog Food - Meat and Rice",
+          "category": "dog",
+          "weight": "1kg",
+          "price": "249",
+          "quantity": 15
+        }
+      ],
+      "date": "2024-11-08T09:10:21.158Z",
+      "totalamount": 3735
+    },
+    {
+      "id": "2bb4",
+      "username": "fariz",
+      "userid": "8c2a",
+      "items": [
+        {
+          "id": "f4ed",
+          "image": "https://www.petsy.online/cdn/shop/files/PedigreeAdultDryDogFood-MeatandRice_823x823.jpg?v=1710500418",
+          "name": "Pedigree Adult Dry Dog Food - Meat and Rice",
+          "category": "dog",
+          "weight": "1kg",
+          "price": "249",
+          "quantity": 4
+        }
+      ],
+      "date": "2024-11-08T09:11:29.224Z",
+      "totalamount": 996
+    },
+    {
+      "id": "791e",
+      "username": "fariz",
+      "userid": "8c2a",
+      "items": [
+        {
+          "id": "f4ed",
+          "image": "https://www.petsy.online/cdn/shop/files/PedigreeAdultDryDogFood-MeatandRice_823x823.jpg?v=1710500418",
+          "name": "Pedigree Adult Dry Dog Food - Meat and Rice",
+          "category": "dog",
+          "weight": "1kg",
+          "price": "249",
+          "quantity": 4
+        }
+      ],
+      "date": "2024-11-08T09:11:31.673Z",
+      "totalamount": 996
+    },
+    {
+      "id": "172f",
+      "username": "fariz",
+      "userid": "8c2a",
+      "items": [
+        {
+          "id": "f4ed",
+          "image": "https://www.petsy.online/cdn/shop/files/PedigreeAdultDryDogFood-MeatandRice_823x823.jpg?v=1710500418",
+          "name": "Pedigree Adult Dry Dog Food - Meat and Rice",
+          "category": "dog",
+          "weight": "1kg",
+          "price": "249",
+          "quantity": 2
+        },
+        {
+          "id": "e42d",
+          "image": "https://www.petsy.online/cdn/shop/files/1_17_59313985-7762-4718-b4bb-089b5f41ef54.jpg?v=1707812325&width=832",
+          "name": "Pedigree PRO Dry Dog Food - Adult Small Breed Dogs (9+ Months)",
+          "category": "dog",
+          "weight": "1.2kg",
+          "price": "499",
+          "quantity": 1
+        }
+      ],
+      "date": "2024-11-27T08:52:25.503Z",
+      "totalamount": 997
+    },
+    {
+      "id": "5445",
+      "username": "fariz",
+      "userid": "8c2a",
+      "items": [
+        {
+          "id": "f4ed",
+          "image": "https://www.petsy.online/cdn/shop/files/PedigreeAdultDryDogFood-MeatandRice_823x823.jpg?v=1710500418",
+          "name": "Pedigree Adult Dry Dog Food - Meat and Rice",
+          "category": "dog",
+          "weight": "1kg",
+          "price": "249",
+          "quantity": 2
+        },
+        {
+          "id": "e42d",
+          "image": "https://www.petsy.online/cdn/shop/files/1_17_59313985-7762-4718-b4bb-089b5f41ef54.jpg?v=1707812325&width=832",
+          "name": "Pedigree PRO Dry Dog Food - Adult Small Breed Dogs (9+ Months)",
+          "category": "dog",
+          "weight": "1.2kg",
+          "price": "499",
+          "quantity": 1
+        }
+      ],
+      "date": "2024-11-27T08:52:36.672Z",
+      "totalamount": 997
+    }
+  ]
+}
