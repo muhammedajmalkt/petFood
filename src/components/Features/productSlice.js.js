@@ -6,7 +6,7 @@ export const handleProducts= createAsyncThunk(
     async ({page,limit,category,name},{rejectWithValue})=>{
         const params= {page,limit,category,name}
         try {
-            const res = await axios.get("http://localhost:8000/api/products",{params:params})
+            const res = await axios.get(`${process.env.REACT_APP_API_URL}/products`,{params:params})
             // console.log(res.data)
              return res.data
         } catch (error) {
@@ -21,7 +21,7 @@ export const deleteProduct= createAsyncThunk(
     async (productId,{rejectWithValue})=>{
         try{
             const token = localStorage.getItem("accessToken")
-            const res = await  axios.patch(`http://localhost:8000/api/products/${productId}`,
+            const res = await  axios.patch(`${process.env.REACT_APP_API_URL}/products/${productId}`,
                 {},{headers:{"Authorization": token}} )
                 console.log(res.data);
                 return res.data
@@ -39,7 +39,7 @@ export const editProduct = createAsyncThunk (
    async ({productId,product},{rejectWithValue})=>{
     try {        
         const token = localStorage.getItem("accessToken")
-        const res = await axios.put(`http://localhost:8000/api/products/${productId}`, 
+        const res = await axios.put(`${process.env.REACT_APP_API_URL}/products/${productId}`, 
             product,{headers:{"Authorization":token}}
         )
         console.log(res.data,"edit");
@@ -59,7 +59,7 @@ export const hanldeNewProduct = createAsyncThunk(
     
     try {
       const token = localStorage.getItem("accessToken");
-      const res = await axios.post( "http://localhost:8000/api/products",
+      const res = await axios.post( `${process.env.REACT_APP_API_URL}/products`,
         product, { headers: { "Authorization": token ,'Content-Type':"multipart/form-data" } })
 
         console.log(res.data,"newPro");

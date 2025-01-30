@@ -5,7 +5,7 @@ import axios from "axios";
     "auth/signup",
     async (data,{rejectWithValue})=>{
         try {
-            const res= await axios.post("http://localhost:8000/api/users/signup", data)
+            const res= await axios.post(`${process.env.REACT_APP_API_URL}/users/signup`, data)
             // console.log(res.data);
             return res.data
             
@@ -14,11 +14,13 @@ import axios from "axios";
         }
     }
  )
+ console.log(process.env.REACT_APP_API_URL);
+ 
   export const handleLogin=createAsyncThunk(
     "auth/login",
     async (data,{rejectWithValue})=>{
         try {
-            const res=await axios.post("http://localhost:8000/api/users/login",data)
+            const res=await axios.post(`${process.env.REACT_APP_API_URL}/users/login`,data)
             // console.log("yyyy",res.data);
 
             return res.data
@@ -35,7 +37,7 @@ import axios from "axios";
     async (_,{rejectWithValue} )=>{
         try {
             const token =localStorage.getItem("accessToken")
-            const res = await axios.get("http://localhost:8000/api/users/userin",
+            const res = await axios.get(`${process.env.REACT_APP_API_URL}/users/userin`,
                 {headers:{"Authorization":token}})
                 
                 console.log(res.data);

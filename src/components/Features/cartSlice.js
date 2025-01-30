@@ -7,7 +7,7 @@ export const fetchCart=createAsyncThunk(
         try {
             // console.log(userId,"id");
             const token= localStorage.getItem("accessToken")
-            const res =await  axios.get(`http://localhost:8000/api/users/cart/${userId}`, 
+            const res =await  axios.get(`${process.env.REACT_APP_API_URL}/users/cart/${userId}`, 
             {headers:{ 'Authorization': token }})            
             return res.data  
         } catch (error) {
@@ -23,8 +23,9 @@ export const addProductToCart= createAsyncThunk(
     async ({userId,productId,quantity},{rejectWithValue})=>{
         try {
             const token= localStorage.getItem("accessToken")
-            const res=await axios.post (`http://localhost:8000/api/users/cart/${userId}`,
+            const res=await axios.post (`${process.env.REACT_APP_API_URL}/users/cart/${userId}`,
                 { productId,quantity},{headers:{"Authorization":token}})
+
             console.log( res.data);
             return res.data
         } catch (error) {            
@@ -36,7 +37,7 @@ export const removeProduct=createAsyncThunk(
     "cart/removeproduct",
     async ({userId,productId},{rejectWithValue})=>{
         try {            
-            const res = await axios.delete(`http://localhost:8000/api/users/cart/${userId}`,{data: {productId}})
+            const res = await axios.delete(`${process.env.REACT_APP_API_URL}/users/cart/${userId}`,{data: {productId}})
             console.log(res.data.data);
             return res.data
             
@@ -53,7 +54,7 @@ export const quantityIncrease=createAsyncThunk (
         
         try {
             // const token= localStorage.getItem("accessToken")
-            const res = await axios.patch(`http://localhost:8000/api/users/cart/increase/${userId}`,{productId})
+            const res = await axios.patch(`${process.env.REACT_APP_API_URL}/users/cart/increase/${userId}`,{productId})
             console.log(res.data);
             return res.data    
         } catch (error) {
@@ -66,7 +67,7 @@ export const quantityDecrease =createAsyncThunk(
     "cart/decrease",
     async ({userId,productId},{rejectWithValue})=>{
         try {
-            const res = await axios.patch(`http://localhost:8000/api/users/cart/decrease/${userId}`,{productId} )
+            const res = await axios.patch(`${process.env.REACT_APP_API_URL}/users/cart/decrease/${userId}`,{productId} )
             return res.data
             
         } catch (error) {

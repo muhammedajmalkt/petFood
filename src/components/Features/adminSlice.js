@@ -7,7 +7,7 @@ export const handleAllUser=createAsyncThunk(
         try {
             const params={page,limit}
             const token = localStorage.getItem("accessToken")
-            const res= await axios.get("http://localhost:8000/api/admin/users",
+            const res= await axios.get(`${process.env.REACT_APP_API_URL}/admin/users`,
            {headers:{"Authorization":token}}, {params:params})
             
             // console.log(res .data);
@@ -25,7 +25,7 @@ export const handleUserById= createAsyncThunk(
     async (userId,{rejectWithValue})=>{
         try {
             const token = localStorage.getItem("accessToken")
-            const res= await axios.get(`http://localhost:8000/api/admin/user/${userId}`,
+            const res= await axios.get(`${process.env.REACT_APP_API_URL}/admin/user/${userId}`,
                 {headers:{"Authorization":token}} )
                 console.log(res.data,"userBy");
                 
@@ -43,7 +43,7 @@ export const handleRevenue= createAsyncThunk(
     async (_,{rejectWithValue})=>{
         try {
             const token = localStorage.getItem("accessToken")
-            const res=await axios.get("http://localhost:8000/api/admin/income",
+            const res=await axios.get(`${process.env.REACT_APP_API_URL}/admin/income`,
                 {headers:{"Authorization":token}})
                 // console.log(res.data);
                 return res.data
@@ -58,7 +58,7 @@ export  const fetchAllOrders= createAsyncThunk(
     async (_,{rejectWithValue})=>{
         try {
             const token = localStorage.getItem("accessToken")
-            const res = await axios.get("http://localhost:8000/api/admin/orders",
+            const res = await axios.get(`${process.env.REACT_APP_API_URL}/admin/orders`,
                 {headers:{"Authorization":token}} )
                 console.log("check console" ,res.data.data);
                 return res.data.data
@@ -75,7 +75,7 @@ export const handleBlock= createAsyncThunk(
     async (userId,{rejectWithValue})=>{
         try {
             const token = localStorage.getItem("accessToken")
-            const res= await axios.patch(`http://localhost:8000/api/admin/user/${userId}`,
+            const res= await axios.patch(`${process.env.REACT_APP_API_URL}/admin/user/${userId}`,
             {},{headers:{"Authorization": token}})
 
             console.log( res.data);

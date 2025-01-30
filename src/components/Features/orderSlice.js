@@ -8,7 +8,7 @@ export const createOrder=createAsyncThunk(
         console.log("address",address);
       try {        
         const token =localStorage.getItem("accessToken")
-        const res= await axios.post(`http://localhost:8000/api/users/order/${userId}`,
+        const res= await axios.post(`${process.env.REACT_APP_API_URL}/users/order/${userId}`,
            {address},{headers:{"Authorization":token}}
         )
         // console.log(address);
@@ -28,7 +28,7 @@ export  const fetchOrder=createAsyncThunk(
     async (userId,{rejectWithValue})=>{
         try {            
             const token =localStorage.getItem("accessToken")
-            const res = await axios.get( `http://localhost:8000/api/users/order/${userId}`,
+            const res = await axios.get( `${process.env.REACT_APP_API_URL}/users/order/${userId}`,
                 {headers:{"Authorization":token}} )
             // console.log(res.data.data,"hhhhhorders");
             

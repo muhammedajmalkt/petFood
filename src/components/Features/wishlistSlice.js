@@ -6,7 +6,7 @@ export const addToWishlist =createAsyncThunk(
     async ({userId,productId},{rejectWithValue})=>{
         try {
             const token = localStorage.getItem("accessToken")
-            const res = await axios.post (`http://localhost:8000/api/users/wishlist/${userId}`,
+            const res = await axios.post (`${process.env.REACT_APP_API_URL}/users/wishlist/${userId}`,
                         {productId},{headers:{"Authorization":token}})                        
                         return res.data  
         } catch (error) {
@@ -21,7 +21,7 @@ export const getWishlist =createAsyncThunk(
         try {
             const token = localStorage.getItem("accessToken")
             // console.log(token);
-            const res = await axios.get (`http://localhost:8000/api/users/wishlist/${userId}`,
+            const res = await axios.get (`${process.env.REACT_APP_API_URL}/users/wishlist/${userId}`,
                 {headers:{"Authorization":token}})
                  console.log(res.data);
                         
@@ -38,7 +38,7 @@ export const removeWishlist =createAsyncThunk(
         try {
             
             const token = localStorage.getItem("accessToken")
-            const res = await axios.patch (`http://localhost:8000/api/users/wishlist/${userId}`,
+            const res = await axios.patch (`${process.env.REACT_APP_API_URL}/users/wishlist/${userId}`,
                 {productId},{headers:{"Authorization":token}})
                  console.log(res.data);
                         
