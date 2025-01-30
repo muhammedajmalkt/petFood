@@ -24,7 +24,7 @@ const Products = () => {
   const {user} =useSelector((state)=>state.auth)
   
   useEffect(()=>{
-    dispatch(handleProducts({page:1,limit:50,category:category , name :searchValue }))
+    dispatch(handleProducts({page:1,limit:50,category:category , name :searchValue}))
   },[category ,searchValue])
     
   const handleCategoryChange=(value)=>{
