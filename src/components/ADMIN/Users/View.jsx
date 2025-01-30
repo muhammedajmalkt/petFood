@@ -17,13 +17,15 @@ const View = ({ setShowView, selectedUser }) => {
    dispatch(fetchCart(selectedUser._id))
   },[])
   const {cartItem} =useSelector((state)=> state.cart)
-  console.log( cartItem);
 
   useEffect(()=>{
     dispatch(fetchOrder(selectedUser?._id))
   },[dispatch])
   const {orderItem,orderDtls}=useSelector((state)=>state.order)
-  console.log( orderItem,"orderItem");
+  // const order= orderItem.map((item)=>item.products).flat()
+  console.log(orderItem,"item");
+  
+  // console.log( order.map((item)=>item),"orderItem");
 
  
 
@@ -60,7 +62,7 @@ const View = ({ setShowView, selectedUser }) => {
         <div>
           <img
             src={item.productId.image}
-            alt={item.productId.name} // Added alt attribute
+            alt={item.productId.name} 
             className="w-24 h-24 object-cover mb-2"/>
         </div>
         <div>
@@ -78,7 +80,7 @@ const View = ({ setShowView, selectedUser }) => {
     ))
   ) : (
     <div className="container mx-auto mt-16 text-center">
-      <h1 className="text-2xl ">No cart found.</h1>
+      <h1 className="text-2xl "> Cart not found.</h1>
     </div>
   )}
 </div>
@@ -86,57 +88,55 @@ const View = ({ setShowView, selectedUser }) => {
 
 
       
-  <div>
-  <h1 className="text-xl font-bold mb-4 mt-10">ORDER</h1>
-  {orderItem.length > 0 ? (
-    <div>
-      {/* Order Details */}
-      <div className="mb-4 p-4 bg-orange-50 shadow rounded-lg flex flex-row gap-10">
-        <div>
-          <h1 className="font-medium">Order ID: {orderDtls?._id}</h1>
-          <h1 className="text-gray-600 font-medium">
-            <span className="font-bold">Date:</span> {orderDtls?.createdAt.slice(0, 10)}
-          </h1>
-          <h1 className="text-gray-600 font-medium">
-            <span className="text-green-600 font-bold">Total:</span> ${orderDtls?.totalAmount}
-          </h1>
-        </div>
-      </div>
+<div>
+  <h1 className="text-xl font-bold mb-2">ORDER</h1>
+  {orderItem?.length > 0 ? (
+    <div className="grid grid-cols-1 gap-6">
+      {orderItem.map((item) => (
+        <div
+          key={item._id}
+          className="p-6 bg-white shadow-lg rounded-lg flex flex-col gap-6"
+        >
+          {/* Order Details */}
+          <div className="bg-orange-50 p-4 rounded-lg w-full">
+            <h1 className="font-semibold text-lg">Order ID: {item._id}</h1>
+            <p className="text-gray-600">
+              <span className="font-medium">Date:</span> {item.createdAt.slice(0, 10)}
+            </p>
+            <p className="text-green-600 font-medium">
+              <span className="font-bold">Total:</span> ${item.totalAmount}
+            </p>
+          </div>
 
-      {orderItem.length > 0 ? (
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          {orderItem.map((order) => (
-            <div
-              key={order._id}
-              className="mb-4 p-4 bg-white shadow rounded-lg flex flex-col items-center"
-            >
-              <img
-                src={order.productId.image}
-                alt={order.productId.name} 
-                className="w-24 h-24 object-cover rounded mb-4"
-              />
-              <div>
-              <h1 className=" text-sm">Name: {order.productId.name}</h1>
-
-                <h1 className=" text-sm">Qty: {order.quantity}</h1>
-                <h1 className="text-gray-700">Price: ${order.productId.price}</h1>
+          {/* Ordered Products (In rows) */}
+          <div className="w-full">
+            {item.products.map((order) => (
+              <div
+                key={order.productId._id}
+                className="p-4 bg-gray-100 rounded-lg  flex gap-6 shadow mb-4"
+              >
+                <img
+                  src={order.productId.image}
+                  alt={order.productId.name}
+                  className="w-24 h-24 object-cover rounded mb-2"
+                />
+                <div className='flex flex-col'>
+                <h1 className="text-sm font-semibold">{order.productId.name}</h1>
+                <p className="text-gray-700 text-sm">Qty: {order.quantity}</p>
+                <p className="text-green-600 font-medium">${order.productId.price}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      ) : (
-        <div className="text-center mt-8">
-          <h1 className="text-2xl font-bold text-gray-600">No items in this order.</h1>
-        </div>
-      )}
+      ))}
     </div>
   ) : (
     <div className="text-center mt-16">
-      <h1 className="text-2xl">Order  not found.</h1>
+      <h1 className="text-2xl">Order not found.</h1>
     </div>
   )}
 </div>
-
 
     </div>
   );

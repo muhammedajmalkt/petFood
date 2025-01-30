@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { HiOutlineBanknotes } from "react-icons/hi2";
 import { BsBank2 } from "react-icons/bs";
 import { createOrder } from "../../Features/orderSlice";
+import { fetchCart } from "../../Features/cartSlice";
 
 
 
@@ -50,6 +51,7 @@ const Checkout = () => {
                   no-repeat
                 `
               });
+              dispatch(fetchCart(user._id))
                  navigate("/")
             })
             .catch((error) => {

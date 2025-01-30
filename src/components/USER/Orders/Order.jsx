@@ -39,7 +39,7 @@ console.log(orderItem,"orderItem=====");
           <div className="border-t pt-4">
             <h4 className="font-bold mb-2">Products:</h4>
             <ul>
-              {orderItem?.map((item) => (
+              {orderItem && orderItem?.map((item) => (
                 <li
                   key={item?.productId._id}
                   className="flex items-center justify-between py-2"

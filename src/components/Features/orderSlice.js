@@ -30,7 +30,7 @@ export  const fetchOrder=createAsyncThunk(
             const token =localStorage.getItem("accessToken")
             const res = await axios.get( `http://localhost:8000/api/users/order/${userId}`,
                 {headers:{"Authorization":token}} )
-            console.log(res.data,"orders");
+            // console.log(res.data.data,"hhhhhorders");
             
             return res.data.data
         } catch (error) {
@@ -71,9 +71,8 @@ const orderSlice=createSlice({
         })
         .addCase(fetchOrder.fulfilled,(state,action)=>{
             state.loading = false
-            state.orderItem = action.payload?.products
+            state.orderItem = action.payload
             state.orderDtls =action.payload
-            console.log(action.payload, "order");
         })
         .addCase(fetchOrder.rejected,(state,action)=>{
             state.loading = false

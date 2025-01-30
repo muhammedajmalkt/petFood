@@ -269,7 +269,7 @@ const Product = () => {
           </form>
         </div>
       )}
-      <h1 className="text-lg font-bold mb-6">PRODUCT LIST</h1>
+      <h1 className="text-2xl font-bold mb-6">PRODUCT LIST</h1>
 
       <table className="min-w-full bg-white border border-gray-300">
         <thead>

@@ -84,7 +84,7 @@ const Navbar = () => {
               </div>
             </Link>
 
-            {user ? (
+            { user && user?.role === "user" ? (
               <div
                 onClick={() => setShowprofile(!showprofile)}
                 className="flex flex-col items-center border-1 border-gray-800  p-1"

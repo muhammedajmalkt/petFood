@@ -21,18 +21,19 @@ const Login = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { logError ,user } = useSelector((state) => state.auth);
+    console.log("rrr",logError);
     
-  useEffect(()=>{
-    if(logError){
-      Swal.fire({
-        position: "top-end",
-        icon: "error",
-        title: logError,
-        showConfirmButton: false,
-        timer: 3000
-      });
-    }
-  },[logError])
+  // useEffect(()=>{
+  //   if(logError){
+  //     Swal.fire({
+  //       position: "top-end",
+  //       icon: "error",
+  //       title: logError,
+  //       showConfirmButton: false,
+  //       timer: 3000
+  //     });
+  //   }
+  // },[logError])
 
   const handleSubmit = async (values) => {
     try {
@@ -58,6 +59,13 @@ const Login = () => {
         navigate("/admin");
       } 
     } catch (err) {
+            Swal.fire({
+        position: "top-end",
+        icon: "error",
+        title: logError,
+        showConfirmButton: false,
+        timer: 3000
+      });
       console.error("Error during login:", err);
     } 
   };

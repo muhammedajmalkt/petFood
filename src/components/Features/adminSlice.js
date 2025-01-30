@@ -12,6 +12,7 @@ export const handleAllUser=createAsyncThunk(
             
             // console.log(res .data);
             return res.data
+            
         } catch (error) {
             console.log(error.response)
             return rejectWithValue(error.response.data.message)          
@@ -116,7 +117,8 @@ const adminSlice= createSlice({
         .addCase(handleAllUser.rejected,(state,action)=>{
             state.loading = false
             state.error = action.payload
-        })
+        }) 
+
         //userById
         .addCase(handleUserById.pending,(state,action)=>{
             state.loading = true
@@ -156,7 +158,6 @@ const adminSlice= createSlice({
         .addCase(fetchAllOrders.rejected,(state,action)=>{
             state.loading = false
             state.error = action.payload
-
         })
 
         //block
