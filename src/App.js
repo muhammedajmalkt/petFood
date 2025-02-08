@@ -1,6 +1,6 @@
 import './App.css';
 import Signup from './components/USER/Registration/Signup';
-import { BrowserRouter,  Route, Routes } from 'react-router-dom';
+import { BrowserRouter,  HashRouter,  Route, Routes } from 'react-router-dom';
 import Login from './components/USER/Registration/Login';
 import Cart from './components/USER/Cart/Cart';
 import Checkout from './components/USER/Checkout/Checkout';
@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="App ">
-      <BrowserRouter>
+      <HashRouter>
 
       <Routes>
         <Route path='/' element={<Layout/>}>
@@ -37,7 +37,7 @@ function App() {
 
       </Routes>
      
-      </BrowserRouter>
+      </HashRouter>
      
     </div>
   );

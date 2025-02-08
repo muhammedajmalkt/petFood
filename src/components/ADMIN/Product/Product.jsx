@@ -59,7 +59,7 @@ const Product = () => {
         console.error("Error delete product:", error);
 
      })
-
+ 
   };
 
   const handleSubmit = (e) => {
